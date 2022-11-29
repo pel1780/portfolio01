@@ -23,8 +23,18 @@ body {
 
 /* 세팅 css */
 
+.slick-track,
+.slick-list {
+    transition-delay: 0.03s;
+}
+
 .header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: auto;
     z-index: 999;
+
 }
 
 .header .inner {
@@ -43,6 +53,7 @@ body {
 
 .header .gnb {
     line-height: 100px;
+    color: rgb(248, 248, 237);
 }
 
 .header .gnb .left_category {
@@ -59,10 +70,11 @@ body {
     position: absolute;
     line-height: 1.65;
     top: 50%;
-    left: 800px;
+    left: 830px;
     transform: translate(-50%, -50%);
 
     font-size: 10px;
+    letter-spacing: 2px;
 }
 
 .header .gnb .right_category {
@@ -76,8 +88,138 @@ body {
     display: inline-block;
     width: 1px;
     height: 12px;
-    background: #444444;
     margin: 0 30px;
+    background: rgb(248, 248, 237);
 }
 
 /* header 영역 */
+
+/* main_mainSlide */
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 700px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../img/main01.png) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../img/main02.png) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../img/main03.png) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .inner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(248, 248, 237);
+}
+
+.mainVisual .mainSlide .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    background: none;
+    border: none;
+    font-size: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.mainVisual .mainSlide .slick-prev {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin: 0 0 0 -700px;
+}
+
+.mainVisual .mainSlide .slick-next {
+    transform: translate(-50%, -50%) rotate(135deg);
+    margin: 0 0 0 700px;
+}
+
+.mainVisual .mainSlide .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    right: 351px;
+    transform: translate(-100%, 0);
+}
+
+.mainVisual .mainSlide .slick-dots>li {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.mainVisual .mainSlide .slick-dots>li.slick-active {
+    background: #fff;
+}
+
+.mainVisual .mainSlide .slick-dots>li button {
+    display: none;
+}
+
+
+.mainVisual .mainSlide .inner strong {
+    display: inline-block;
+    margin: 0 0 15px 0;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.mainVisual .mainSlide .inner p {
+    font-weight: 300;
+    letter-spacing: 14px;
+}
+
+/* sec_slide */
+
+.bottle .inner h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.bottle .inner>p {
+    font-weight: 300;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+
+.product_slide figure {
+    padding: 10px 20px;
+}
+
+.bottle .product_slide figure img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 0 20px 0;
+    transition: 0.3s;
+}
+
+.bottle .product_slide figure.slick-center img {
+    transform: scale(1.08);
+}
+
+.bottle .product_slide figure strong {
+    display: block;
+    text-align: center;
+}
