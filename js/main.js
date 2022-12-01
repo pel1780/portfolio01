@@ -11,6 +11,7 @@ $(function () {
     });
 
     $('.product_slide').slick({
+        dots: true,
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 3,
