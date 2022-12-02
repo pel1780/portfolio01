@@ -302,7 +302,7 @@ body {
 }
 
 .bottle .product_slide figure.slick-center img {
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 .bottle .product_slide figure strong {
@@ -442,6 +442,8 @@ body {
     letter-spacing: 5px;
 }
 
+
+/* footer */
 .footer {
     background: #666;
     padding: 50px 0;
@@ -451,9 +453,7 @@ body {
 }
 
 .footer .inner {
-    display: flex;
     justify-content: space-between;
-
 }
 
 .footer .left {
@@ -463,6 +463,10 @@ body {
 
 .footer .left li {
     display: inline-block;
+}
+
+.footer .left li:nth-child(5) {
+    font-weight: 500;
 }
 
 .footer .left li~li::before {
@@ -489,7 +493,6 @@ body {
 .footer .right strong {
     display: inline-block;
     margin: 0 0 10px 0;
-
     line-height: 30px;
 }
 
